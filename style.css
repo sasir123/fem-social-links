@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  --clr-green: hsl(75, 94%, 57%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-gray-700: hsl(0, 0%, 20%);
+  --clr-gray-800: hsl(0, 0%, 12%);
+  --clr-gray-900: hsl(0, 0%, 8%);
+
+  --spacing-50: 0.25rem; 
+  --spacing-100: 0.5rem;
+  --spacing-150: 0.75rem;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-500: 2.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--clr-white);
+}
+
+body {
+  height: 100dvh;
+  background-color: var(--clr-gray-900);
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-large,
+.text-regular,
+.text-regular-bold {
+  line-height: 150%;
+  letter-spacing: 0rem;
+}
+
+.text-large {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.text-regular,
+.text-regular-bold {
+  font-size: 0.875rem;
+}
+
+.text-regular-bold {
+  font-weight: 700;
+}
+
+.text-green {
+  color: var(--clr-green);
+}
+
+.social-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-300);
+  background-color: var(--clr-gray-800);
+  padding: var(--spacing-500);
+  border-radius: var(--spacing-150);
+  margin: var(--spacing-300);
+  max-width: 19rem;
+  min-width: 0;
+  width: 100%;
+}
+
+.avatar-photo {
+  width: 5.5rem;
+  max-width: 100%;
+  min-width: 0;
+  border-radius: 100%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+  list-style-type: none;
+  width: 100%;
+}
+
+.links-list a {
+  display: block;
+  text-align: center;
+  padding: var(--spacing-150);
+  background-color: var(--clr-gray-700);
+  border-radius: var(--spacing-100);
+  text-decoration: none;
+}
+
+.links-list a:hover {
+  background-color: var(--clr-green);
+  color: var(--clr-gray-700);
+  cursor: pointer;
+}
+
+.attribution {
+  display: none;
+}
